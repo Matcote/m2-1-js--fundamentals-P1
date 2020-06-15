@@ -12,3 +12,20 @@
 // NOTE: 1 and 2 are both prime numbers.
 
 // EXPECTED OUTPUT: [1, 2, 3, 5, 7, 11, 13, ...]
+
+//this doesnt work lol
+let prime = [];
+let isItPrime = true;
+for(num = 1; num < 201; num++){
+    for(j = 0; j < num; j++){
+        if(num % j === 0){
+            isItPrime = false;
+        } else{
+            isItPrime = true;
+        }
+    }
+    if(isItPrime === true){
+        prime.push(num);
+    }
+}
+console.log(prime);

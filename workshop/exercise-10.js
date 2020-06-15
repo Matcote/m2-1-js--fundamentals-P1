@@ -7,3 +7,8 @@
 // #####
 // ######
 // #######
+let triangle = '';
+for (num = 0;  num < 7; num++){
+    triangle = triangle + '#';
+    console.log(triangle);
+}
